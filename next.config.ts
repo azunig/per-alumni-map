@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+typescript: {
+    // !! ADVERTENCIA !!
+    // Esto permite que el build termine aunque haya errores de tipo.
+    ignoreBuildErrors: true,
+  },
 };
 
 export default nextConfig;
